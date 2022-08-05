@@ -348,7 +348,7 @@ Ahora, anda y chequeá el contenido del directorio `browser/`. Deberías ver una
 
 ...
 
-...Sorprendido? Se ve bastante loco ahí, verdad? Pero si ves cuidadosamente, vas a ver nuestro código! Si ves a un mas cerca, podes notar que el código de app.js esta ahora envuelto en otra expresión de función - que parece estar pasando algo llamado `module` y `exports` a él!
+...Sorprendido? Se ve bastante loco ahí, verdad? Pero si ves cuidadosamente, vas a ver nuestro código! Si ves aun mas cerca, podes notar que el código de app.js esta ahora envuelto en otra expresión de función - que parece estar pasando algo llamado `module` y `exports` a él!
 
 Normalmente no veremos dentro de nuestro `bundle.js` (y se vuelven bastante grandes!), ni vamos a ir a las especificidades de como webpack hace su magia, pero podés ver la idea - webpack toma tu código JavaScript y lo envuelve en una lógica de módulos muy sofisticada. De esta forma, podemos empezar usando nuestros archivos Javascript del lado del cliente como módulos!
 

@@ -1,6 +1,8 @@
-(function () {
-
-  window.whiteboard = new window.EventEmitter();
+// (function () {
+  //Como este archivo esta haciendo uso del EventEmmitter lo requerimos de event-emiter.js
+  //window.whiteboard = new window.EventEmitter();
+  var EvEmi = require("./event-emitter");
+  var whiteboard = new EvEmi;
 
   // Ultimately, the color of our stroke;
   var color;
@@ -113,4 +115,6 @@
 
   };
 
-})();
+// })();
+
+module.exports = whiteboard;
