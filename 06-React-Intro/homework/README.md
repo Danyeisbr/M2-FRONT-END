@@ -40,7 +40,7 @@ Este Componente nos va a servir para renderizar muchos Componentes `Cards`. Bás
 
 #### Barra de búsqueda (`components/SearchBar.js`)
 
-Este componente se va a utilizarse para luego poder encontrar las ciudades sobre las cuales se desee ver el clima actual.
+Este componente va a utilizarse para poder encontrar las ciudades sobre las cuales se desee ver el clima actual.
 
 ![](./img/SearchBar.png)
 
@@ -60,4 +60,4 @@ Instala todas las dependecias necesarias para correr el proyecto correctamente
 Comienza a correr la aplicación de forma local por lo que se puede ver desde el navegador accediendo a
 http://localhost:3000
 
->No es necesario volver a correr el proyecto cada vez que se realice un cambio sino que se verá automáticamente reflejando en el navegador.
+>No es necesario volver a correr el proyecto cada vez que se realice un cambio sino que se verá automáticamente reflejado en el navegador.
