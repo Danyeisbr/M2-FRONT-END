@@ -9,10 +9,14 @@ const pStyle = {
   textAlign: 'center',
 };
 
+const h3Style = {
+  color: "red", 
+}
+
 function Product(props) {
   return (
     <div style={divStyle}>
-      <h3>{props.title}</h3>
+      <h3 style={h3Style} >{props.title}</h3>
       <p style={pStyle}>{props.price}</p>
     </div>
   );

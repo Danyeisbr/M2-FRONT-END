@@ -1,0 +1,21 @@
+.container {
+    width: 400px;
+    border: 2px solid #777;
+    background-color: #17a2b8;
+    border-radius: 15px;
+  }
+
+.temperature {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonClose {
+    float: right;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid darkred;
+    margin: 10px;
+}
+

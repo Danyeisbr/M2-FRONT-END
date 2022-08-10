@@ -16,11 +16,19 @@ const Titulo = styled.h3`
   }
 `;
 
+const Parrafo = styled.p `
+  color: blue;
+  &:hover {
+    color: red;
+  }
+`;
+
 function Product(props) {
   return (
     <Producto>
       <Titulo>{props.title}</Titulo>
-      <p>{props.price}</p>
+      <Parrafo>{props.price}</Parrafo>
+      <p> Hola, soy el parrafo sin estilo </p>
     </Producto>
   );
 }

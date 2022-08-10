@@ -1,12 +1,12 @@
 import React from 'react';
-import s from  './Product.css';
+import objStyles from  './Product.css';
 
 
 function Product(props) {
-  console.log('esto es s:', s);
+  console.log('este es el objeto de estilos:', objStyles);
   return (
-    <div className={`${s.producto} ${s.hola}`}>
-      <h3 className={s.hola}>{props.title}</h3>
+    <div className={`${objStyles.producto} ${objStyles.hola}`}>
+      <h3 className={objStyles.hola}>{props.title}</h3>
       <p>{props.price}</p>
     </div>
   );

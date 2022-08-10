@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.searchCity {
+  border-radius: 10px;
+}
+
+.btnSearch {
+  background-color: #17a2b8;
+  border-radius: 15px;
+  width: 300px;
+  margin-left: 10px;
+}

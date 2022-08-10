@@ -1,3 +1,8 @@
+body {
+  /*background: url("../src/img/clima.jpg");*/
+  background-color: burlywood;
+}
+
 .App {
   text-align: center;
 }

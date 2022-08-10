@@ -12,3 +12,10 @@ function App() {
   )
 }
 render(<App />, document.getElementById('app'));
+
+/*
+Cuando necesitamos retornar mas de un componente usamos los parentesis angulares, asi: return (
+  <>
+  </>
+  )
+*/
