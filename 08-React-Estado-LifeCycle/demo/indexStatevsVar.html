@@ -16,22 +16,23 @@
 
  class StateContador extends React.Component{
    constructor(props) {
-     super(props);
-     this.state = {
+      super(props);
+      this.state = {
        contador: this.props.contador
       }
       this.variable = this.props.contador
-      this.incrementoContador= this.incrementoContador.bind(this);
+      this.incrementoContador = this.incrementoContador.bind(this);
     }
     
     onButtonClick = () => {
-      this.setState((state) => {
-          return {contador: state.contador + 1}
-     });
-      console.log("Actualicé mi state :", this.state.contador)
+      this.setState({
+          contador: this.state.contador + 1
+        },
+        () => console.log("Actualicé mi state :", this.state.contador)
+      );
     }
     
-    incrementoContador(cuento) {
+    incrementoContador() {
      this.variable++
       console.log("Soy contador ", this.variable)
     }

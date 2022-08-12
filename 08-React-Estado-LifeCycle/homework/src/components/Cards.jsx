@@ -18,8 +18,10 @@ export default function Cards({cities, onClose}) {
       </div>
     );
   } else {
-    return(
-      <div>Sin ciudades</div>
+    return (
+      <div className='class="alert alert-primary' role="alert">
+        No se encontró la ciudad
+      </div>
     )
   }
 }

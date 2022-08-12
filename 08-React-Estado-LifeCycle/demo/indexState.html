@@ -18,7 +18,8 @@
       constructor(props) {
         super(props);
         this.state = {
-          contador: this.props.numero
+          contador: this.props.numero,
+          nombre: this.props.nombre
         }
         // this.onButtonClick = this.onButtonClick.bind(this);
       }
@@ -37,17 +38,32 @@
         })
       }
 
+      onReset = () => {
+        this.setState({
+          contador: this.props.numero,
+        })
+      }
+
+      onName = () => {
+        this.setState({
+          nombre: this.state.nombre + " aei",
+        })
+      }
+
       render() {
         return (
           <div>
             <button onClick={this.onButtonClick}>Suma uno!</button>
+            <button onClick={this.onReset}>Reset</button>
+            <button onClick={this.onName}>Add Vowel</button>
             <p>Hola! van {this.state.contador}</p>
+            <p>Hola! {this.state.nombre}</p>
           </div>
         )
       }
     };
 
-    ReactDOM.render(<Contador numero={0} />, document.getElementById('app'));
+    ReactDOM.render(<Contador numero={0} nombre="Dan" />, document.getElementById('app'));
   </script>
 </body>
 

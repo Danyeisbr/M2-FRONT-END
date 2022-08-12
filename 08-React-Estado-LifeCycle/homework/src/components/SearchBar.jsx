@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 
 export default function SearchBar({onSearch}) {
+
+  const [city, setCity] = useState("");
+
   return (
-    <form onSubmit={(e) => {
+    <form className="form-inline" onSubmit={(e) => {
       e.preventDefault();
-      onSearch("Cairns");
+      onSearch(city);
     }}>
-      <input
-        type="text"
-        placeholder="Ciudad..."
+      <input className="form-control mr-sm-2" type="search" placeholder="Search City" aria-label="Search"
+        value={city}
+        onChange={(e) => setCity(e.target.value)}
       />
-      <input type="submit" value="Agregar" />
+      <input className="btn btn-outline-success" type="submit" value="ADD" />
     </form>
   );
 }
