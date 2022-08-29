@@ -6,17 +6,24 @@ import './Movie.css';
 
 class Movie extends React.Component {
 
-
+    componentDidMount () {
+        this.props.getMovieDetail(this.props.match.params.id)
+    }
 
     render() {
         return (
             <div className="movie-detail">
-                Detalle de la pelicula  
+               <h2>{this.props.detail.Title}</h2> 
+               <img src={this.props.detail.Poster} alt="Poster not found" />
             </div>
         );
     }
 }
 
+function mapStateToProps(state) {
+    return {
+        detail: state.movieDetail
+    }
+}
 
-
-export default (Movie);
+export default connect(mapStateToProps, {getMovieDetail})(Movie);
